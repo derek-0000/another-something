@@ -6,7 +6,10 @@ import { createTheme, ThemeProvider } from "@mui/material";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
 
-const theme = createTheme({ typography: { fontFamily: "Inter, sans-serif" } });
+const theme = createTheme({
+  palette: { mode: "dark" },
+  typography: { fontFamily: "Noto Sans" },
+});
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
